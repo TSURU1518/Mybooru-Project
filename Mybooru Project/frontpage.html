@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mybooru | 나만을 위한 이미지 정리·보기 사이트</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="responsive.css?8" title="default" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="css/jquery-ui.css" title="default" />
+    <link rel="SHORTCUT ICON" href="favicon.png" />
+    <meta name="keywords" content="anime, doujinshi, hentai, porn, sex, japanese hentai, anime hentai, imageboard" />
+    <meta name="description" content="One of the most popular imageboards with millions of FREE hentai and anime images, wallpapers, video and more! No account needed, updated constantly!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="search" type="application/opensearchdescription+xml" title="Gelbooru.com: Coded by Geltas" href="gelbooru.xml" />
+    <link rel="stylesheet" href="//gelbooru.com/bootstrap.css">
+
+</head>
+
+<body style="background: url('layout/index_back.png') repeat-x;">
+    <br /><br /><br />
+    <div id="static-index">
+        <h1 style="font-size: 4em;"><a href="index.php?page=post&s=list&tags=all">Mybooru</a>
+        </h1>
+        <br />
+        <h2 style="font-size: 1em;">나만을 위한 이미지 정리·보기 사이트
+        </h2>
+        <div class="space" id="links" style="margin-bottom: 10px;">
+            <a href="index.php?page=post&amp;s=list" title="모든 일러스트 보기"><b>Browse All Posts</b></a>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="//gelbooru.com//script/miscJs.js?1"></script>
+        <script type="text/javascript" src="//gelbooru.com/script/application.js?68"></script>
+        <form action="index.php?page=search" method="post">
+            <input id="tags-search" name="tags" class="search_list-frontpage" type="text" />
+            <input name="commit" class="secondary_search" type="submit" value="Search" /><br /><br />
+        </form>
+        <br />
+        <img src="./counter/5.png" border="0" alt="5" />
+        <img src="./counter/0.png" border="0" alt="0" />
+        <img src="./counter/6.png" border="0" alt="6" />
+        <img src="./counter/1.png" border="0" alt="1" />
+        <img src="./counter/1.png" border="0" alt="1" />
+        <img src="./counter/0.png" border="0" alt="0" />
+        <img src="./counter/8.png" border="0" alt="8" />
+        <br />
+        <small style="color: #aaa;">Original concept by <a href="http://danbooru.donmai.us">Danbooru</a></small></div><br /><br /><br /><br />
+    <center>
+        <script type="text/javascript">
+            $('#tags-search').autocomplete({
+                source: function(request, response) {
+                    var term = "";
+                    var pos = parseInt($('#tags-search').caret());
+                    var terms = decodeURIComponent(request.term);
+                    var spacePos = terms.indexOf(" ");
+                    var nextPos = spacePos;
+                    var startPos = -1;
+
+                    while (nextPos < pos && nextPos > -1) {
+                        spacePos = nextPos;
+
+                        nextPos = terms.indexOf(" ", spacePos + 1);
+                    }
+
+                    if (spacePos > pos || spacePos < 0)
+                        spacePos = -1;
+
+                    startPos = spacePos + 1;
+
+                    term = terms.substring(startPos, pos + 1);
+
+                    $.ajax('https://gelbooru.com/index.php?page=autocomplete&term=' + term, {
+                        method: 'GET',
+                        success: function(data, status, xhr) {
+                            var suggestions = [];
+
+                            for (var i = 0; i < data.length; i++) {
+                                suggestions.push(replaceRange(startPos, pos, terms, data[i]));
+                            }
+
+                            response(suggestions);
+                        },
+                        error: function(xhr, status, error) {
+                            response($.ui.autocomplete.escapeRegex([]));
+                        },
+                    });
+                },
+                delay: 150
+            });
+        </script>
+    </center>
+</body>
+
+</html>
