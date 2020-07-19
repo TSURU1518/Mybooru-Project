@@ -1,0 +1,16 @@
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\bin\Debug\netcoreapp3.1\Mybooru Project.exe
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\bin\Debug\netcoreapp3.1\Mybooru Project.deps.json
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\bin\Debug\netcoreapp3.1\Mybooru Project.runtimeconfig.json
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\bin\Debug\netcoreapp3.1\Mybooru Project.runtimeconfig.dev.json
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\bin\Debug\netcoreapp3.1\Mybooru Project.dll
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\bin\Debug\netcoreapp3.1\Mybooru Project.pdb
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\obj\Debug\netcoreapp3.1\Mybooru Project.csprojAssemblyReference.cache
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\obj\Debug\netcoreapp3.1\Mybooru Project.csproj.GenerateResource.cache
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\obj\Debug\netcoreapp3.1\Mybooru Project.AssemblyInfoInputs.cache
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\obj\Debug\netcoreapp3.1\Mybooru Project.AssemblyInfo.cs
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\obj\Debug\netcoreapp3.1\Mybooru Project.csproj.CoreCompileInputs.cache
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\obj\Debug\netcoreapp3.1\Mybooru Project.dll
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\obj\Debug\netcoreapp3.1\Mybooru Project.pdb
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\obj\Debug\netcoreapp3.1\Mybooru Project.genruntimeconfig.cache
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\obj\Debug\netcoreapp3.1\Mybooru_Project.MainWindow.resources
+C:\Users\김현영\Desktop\Mybooru_Project_C#\Mybooru Project\obj\Debug\netcoreapp3.1\Mybooru_Project.SettingsWindow.resources
